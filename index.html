@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             padding: 0;
             color: #333;
         }
+
         .container {
             width: 80%;
             margin: 0 auto;
@@ -20,53 +22,102 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
         header {
             text-align: center;
             margin-bottom: 20px;
         }
+
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #04AA6D;
+        }
+
+        .button1:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+
         h1 {
             color: #A31E0F;
             margin: 0;
         }
+
         h2 {
             color: #A0126D;
             margin-top: 20px;
             font-size: 1.5em;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
             margin: 10px 0;
         }
+
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
         .section {
             margin-bottom: 40px;
+            margin-left: 30px;
+            margin-right:30px;
+
         }
+
         .section h2 {
             margin-top: 0;
         }
+
         .section p {
             text-align: justify;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        th, td {
+
+        th,
+        td {
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
+
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+
         .contact-info {
             text-align: center;
             margin-top: 20px;
         }
+
         .contact-info p {
             margin: 5px 0;
         }
+
         .footer {
             text-align: center;
             padding: 20px;
@@ -74,26 +125,40 @@
             border-top: 1px solid #ddd;
             margin-top: 20px;
         }
+
         .footer a {
             color: #A0126D;
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <br>
             <h1>John Estano</h1>
-            <p>“The more I read, the more I acquire, the more certain I am that I know nothing.” – Voltaire.</p>
+            <p><i>“The more I read, the more I acquire, the more certain I am that I know nothing.” – Voltaire.</i></p>
             <br>
         </header>
-        
+
         <div class="section">
             <h2>About Me</h2>
-            <p>Hello! I'm John Estano, a second-year student pursuing a Bachelor of Science in Computer Science at the University of the Immaculate Conception.</p>
-            <p>In my spare time, I enjoy exploring brand new things through games, movies, documentaries, and other things.</p>
+            <p>Hello! I'm John Estano, a second-year student pursuing a Bachelor of Science in Computer Science at the
+                University of the Immaculate Conception.</p>
+            <p> I would describe myself as pretty average in terms of everything. </p>
         </div>
+
+        <div class="section">
+            <h2>Favourites</h2>
+            <ul>
+                <li>Favourite movie of all time is Despicable me 2</li>
+                <li>Favourite game is Plant's vs Zombies</li>
+                <li>I like listening to The Carpenters</li>
+            </ul>
+
+        </div>
+
 
         <div class="section">
             <h2>Skills</h2>
@@ -115,10 +180,19 @@
 
         <div class="section">
             <h2>Projects</h2>
-            <p><b>Attendance Management System:</b> Currently developing a centralized system that can easily record, track, and manage attendances during school events.</p>
-            <p><b>Personal Portfolio:</b> Designed and developed a portfolio website to showcase my projectsand all lol. The site is built brick by brick.</p>
+            <p><b>Attendance Management System:</b> Currently developing a centralized system that can easily record,
+                track, and manage attendances during school events.</p>
+            <p><b>Personal Portfolio:</b> Designed and developed a portfolio website to showcase my projects and all.
+                The site is built brick by brick.</p>
+            <p><b>Point of Sale System:</b> Developed a POS system intended for the UIC Cafe. With functions like add
+                product and other stuff.</p>
         </div>
+        <div class="section">
+            <h2>HTML Project's</h2>
+            <button class="button button1" onclick="window.location.href='https://JohnEstano.github.io/html/fashionblog/index.html'">Fashion Blog</button>
 
+
+        </div>
 
         <div class="section">
             <h2>Contact Information</h2>
@@ -128,9 +202,15 @@
             </div>
         </div>
 
+       
+
         <footer class="footer">
-            <p>Thank you for visiting my portfolio. For more information, connect with me on <a href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.</p>
+            <p>Thank you for visiting my portfolio. For more information, connect with me on <a
+                    href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on
+                <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.
+            </p>
         </footer>
     </div>
 </body>
+
 </html>
