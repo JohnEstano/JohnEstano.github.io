@@ -15,7 +15,7 @@
         }
 
         .container {
-            width: 80%;
+            width: 75%;
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
@@ -57,6 +57,7 @@
         h1 {
             color: #A31E0F;
             margin: 0;
+            font-size: 45px;
         }
 
         h2 {
@@ -127,27 +128,58 @@
         }
         .headerimg {
             height: 300px;
-            width: 500px;
+            width: 800px;
         }
 
         .footer a {
             color: #A0126D;
             text-decoration: none;
         }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            left: 0px;
+            width: 90px;
+            background-color: #fefefe;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            
+        }
+
+        .sidebar a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 8px;
+            text-decoration: none;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #A0126D;
+            color: #fefefe;
+        }
     </style>
 </head>
 
-<body>
+<body id="home">
     <div class="container">
         <header>
-            <br>
-            <br>
-            <img class="headerimg" src="https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2023/09/chess.png?fit=1200%2C800&ssl=1">
+            <img class="headerimg" src="https://i.insider.com/66393035ec0c696569017af3?width=700" style="border-radius: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)">
             <br>
             <br>
             <br>
            
-            <h1>John Estano</h1>
+            <img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/356890151_1494492534654981_1825037940034092820_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHxg_IJRtxtTqVCUBf1EG7ddJGXGJBLjX90kZcYkEuNfzMZbEb4vWwn9U9MPvdtuGNuUQWgxetlL6k1gn-wryPd&_nc_ohc=UKXgSd0ZWlYQ7kNvgFeM-9-&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYD96jyRWbKvonCRSAsvauA6O2UWw-RBPOcOlpetS4hETA&oe=66C3EC67" style="border-radius: 50%;width: 150px; height: 150px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+            <br>
+            <br>
+            <h1><span style="color: black;">Hello, I'm </span><span style="color: #A31E0F;">John Estaño</span></h1>
             <p><i>“The more I read, the more I acquire, the more certain I am that I know nothing.” – Voltaire.</i></p>
             
             <br>
@@ -156,11 +188,16 @@
             <br>
         </header>
 
+        <div class="sidebar">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
         <div class="section">
             <h2>About Me</h2>
-            <p>Hello! I'm John Estano, a second-year student pursuing a Bachelor of Science in Computer Science at the
-                University of the Immaculate Conception.</p>
-            <p> I would describe myself as pretty average in terms of everything. </p>
+            <p>Hey there, I'm John Estano! I'm a 19 year old second-year college student pursuing a Bachelor of Science in Computer Science BSCS at the
+                    <b style="color: #A31E0F;">University of the Immaculate Conception.</b></p>
+            <p>My main focus right now is to expand my knowledge in various fields of technology and programming. I want to enhance my skills to secure a job in the near future. Currently, I am a newbie. </p>
         </div>
 
         <div class="section">
@@ -192,7 +229,7 @@
             </table>
         </div>
 
-        <div class="section">
+        <div class="section" id="projects">
             <h2>Projects</h2>
             <p><b>Attendance Management System:</b> Currently developing a centralized system that can easily record,
                 track, and manage attendances during school events.</p>
@@ -208,7 +245,7 @@
 
         </div>
 
-        <div class="section">
+        <div class="section" id="contact">
             <h2>Contact Information</h2>
             <div class="contact-info">
                 <p><b>Email:</b> <a href="https://mail.google.com/mail/u/0/#inbox">estanojohnpaul16@gmail.com</a></p>
