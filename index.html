@@ -9,7 +9,7 @@
 
     <script>
 
-        //w3school drag and drop API
+        //w3school drag and drop API ctto:
         function allowDrop(ev) {
             ev.preventDefault();
         }
@@ -22,6 +22,8 @@
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
             ev.target.appendChild(document.getElementById(data));
+
+            
         }
 
         //dragwhilescrolling ctto not mine
@@ -104,7 +106,6 @@
         </div>
 
         <div class="car">
-        
             <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
         </div>
@@ -169,14 +170,6 @@
 
     </div>
 
-
-    <div class="container">
-
-
-    </div>
-
-
-
     <div class="container"
         style="box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;">
 
@@ -234,7 +227,7 @@
     </div>
 
     <footer class="footer">
-        <p>Thank you for visiting my portfolio. For more information, connect with me on <a
+        <p>Thank you for visiting my portfolio. Connect with me on <a
                 href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on
             <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.
         </p>
