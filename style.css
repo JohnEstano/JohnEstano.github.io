@@ -9,6 +9,19 @@ html {
   scroll-behavior: smooth;
 }
 
+#div1 {
+  width: 300px;
+  height: 300px;
+}
+
+#div2 {
+  width:300px;
+  height: 200px;
+  
+  border: 1px;
+}
+
+
 .container {
   
   
@@ -39,6 +52,10 @@ header {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+span:hover {
+      transition:  20px;
 }
 
 .button1 {
@@ -117,6 +134,7 @@ tr:nth-child(even) {
   margin: 5px 0;
 }
 
+
 .footer {
   text-align: center;
   padding: 20px;
@@ -148,6 +166,20 @@ tr:nth-child(even) {
   border-radius: 8px;
   z-index: 1000;
 }
+
+.car {
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 1%;
+  right: 10%;
+  width: 90px;
+  background-color: transparent;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
 
 .sidebar a {
   display: block;
