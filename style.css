@@ -9,16 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
-#div1 {
+.div1 {
   width: 300px;
   height: 300px;
 }
 
-#div2 {
-  width:250px;
-  height: 250px;
+#drag1:hover{
+  cursor: grab;
 }
-
 
 .container {
   margin-bottom: 3%;
@@ -66,7 +64,7 @@ span:hover {
 }
 
 h1 {
-  color: #A31E0F;
+  color: #000000;
   margin: 0;
   margin-left: 2%;
   font-size: 45px;
