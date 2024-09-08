@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Estano - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   
+
 
     <script>
 
-        //w3school drag and drop API ctto:
+        //w3school drag and drop API ctto not mine:
         function allowDrop(ev) {
             ev.preventDefault();
         }
@@ -23,7 +25,7 @@
             var data = ev.dataTransfer.getData("text");
             ev.target.appendChild(document.getElementById(data));
 
-            
+
         }
 
         //dragwhilescrolling ctto not mine
@@ -58,80 +60,57 @@
 </head>
 
 <body id="home">
+
+    <div class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactme">Contact</a>
+    </div>
+
+    <div class="car">
+        <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+
     <br>
     <br>
     <br>
     <div class="container">
-        <div style="display: flex; justify-content: center; margin-left:75%;">
-            <img src="https://JohnEstano.github.io/resources/profile.jpg"
-                style="border-radius: 50%;width: 150px; height: 150px; box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;"
-                alt="John Estano">
+        <div>
+            <img class="profile" src="https://JohnEstano.github.io/resources/profile.jpg" alt="John Estano">
         </div>
         <h1>Welcome to my domain,<br> I'm <span style="color: #A31E0F;">John
-                    Estaño.</span><br>It's a pleasure to meet you!</h1>
-        <p style="margin-left: 2%;"><i>This site is a culmination of my WebDev knowledge and skills, from its design to
-                it's functions. Some are experimental.</i></p>
+                Estaño.</span><br>It's a <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic;">pleasure </span> to meet you!</h1>
+       <br><br>
     </div>
 
     <br>
     <br>
 
-
-    <div class="container"
-        style="box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;">
+    <div class="container titleabout" id="about" style="box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;">
         <header>
-            <img class="headerimg"
-                src="https://t4.ftcdn.net/jpg/04/88/30/09/360_F_488300952_W6I1HzHpZqIk3Hw4DVPPSk3StuQVkAkj.jpg"
-                style="border-radius: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)" alt="">
-
-            <br>
-            <br>
-            <br>
-
-            <br>
-            <br>
-            <h1> About Me</h1>
-            <p><i>“The more I read, the more I acquire, the more certain I am that I know nothing.” – Voltaire.</i></p>
-
-            <br>
-            <br>
-            <hr>
-            <br>
+            <h1><br>About Me</h1>
+        
         </header>
-
-        <div class="sidebar">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <div class="car">
-            <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-        </div>
-
+    
         <div class="section">
-            <h2><span style="color: black;">></span>Paul</h2>
-            <div style="display: flex; justify-content: center;">
-                <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <img id="drag1" src="https://JohnEstano.github.io/resources/paulsprite1.png" draggable="true"
-                        ondragstart="drag(event)" alt="image">
-
+            <h2><span class="highlight">></span>Paul</h2>
+            <div class="about-content">
+                <div class="drag-container">
+                    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="drag1" src="https://JohnEstano.github.io/resources/paulsprite1.png" draggable="true" ondragstart="drag(event)" alt="image">
+                    </div>
                 </div>
-
-
-                <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer Science
-                    (BSCS) at the University of the Immaculate Conception. His main focus is to expand his knowledge in
-                    various fields of technology and programming, aiming to enhance his skills to secure a job in the
-                    near future. Currently, he considers himself a newbie.
-                    <br><br>
-
-                    <b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp; &nbsp;<b>Status:</b>
-                    Depressed <br><br>
-                    <i style="font-size: 15px;">*Paul is draggable, try dragging him to the Education section.</i>
+                <div class="textabt">
+                    <p><b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp; &nbsp;<b>Status:</b> Depressed</p>
+                    <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer Science (BSCS) at the University of the Immaculate Conception. His main focus is to expand his knowledge in various fields of technology and programming, aiming to enhance his skills to secure a job in the near future. Currently, he considers himself a newbie.</p>
+                   
+                    <p><i style="font-size: 15px;">*Paul is draggable, try dragging him to the Education section.</i></p>
+                </div>
             </div>
         </div>
-
+    
         <div class="section">
             <h2>Skills</h2>
             <table>
@@ -141,15 +120,15 @@
                 </tr>
                 <tr>
                     <th>Web Development</th>
-                    <td>HTML, CSS</td>
+                    <td>HTML, CSS, Javascript (littlebit)</td>
                 </tr>
                 <tr>
                     <th>Tools & Technologies</th>
-                    <td>Photoshop, Excel, Powerpoint</td>
+                    <td>Photoshop, Excel, Powerpoint, Canva</td>
                 </tr>
             </table>
         </div>
-
+    
         <div class="section">
             <h2>Favourites</h2>
             <ul>
@@ -159,18 +138,38 @@
                 <li>He likes listening to The Carpenters</li>
             </ul>
         </div>
-
+    
         <div class="section">
             <h2>Education</h2>
+            <br>
+            <img src="https://JohnEstano.github.io/resources/bceslogo.jfif" class="schoollogos" alt="buhangin">
+            
+            <img src="https://JohnEstano.github.io/resources/ACDlogo.png" class="schoollogos" alt="acd">
+            <img src="https://JohnEstano.github.io/resources/uiclogo.png" class="schoollogos" alt="uiclogo">
+            
+            <br><br>
             <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        
+           
+        </div>
+    </div>
+
+    <div class="containerforlikes">
+        <div class="section" id="likes">
+            
+
+            <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h1>Paul likes space and music.</h1>
+            
 
         </div>
-
+        <audio controls autoplay>
+            <source src="doodle - Zachz Winner.mp3" type="audio/mpeg" >
+            Your browser doesn't support the audio element.
+        </audio>
 
     </div>
 
-    <div class="container"
+    <div class="container titleabout"
         style="box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;">
 
 
@@ -179,23 +178,18 @@
             <h2>My Projects</h2>
             <p><b>Eduvent : Attendance Management System</b><br> Currently developing a centralized system that can
                 easily record, track, and manage attendances during school events.</p>
-            <img src="https://JohnEstano.github.io/resources/eduvent.png" alt="eduvent"
-                style="height: 300px; width: 500px; border-radius: 10px;">
-            <img src="https://JohnEstano.github.io/resources/eduvent1.png" alt="eduvent"
-                style="height: 300px; width: 500px; border-radius: 10px;">
+            <img class="images" src="https://JohnEstano.github.io/resources/eduvent.png" alt="eduvent">
+            <img class="images" src="https://JohnEstano.github.io/resources/eduvent1.png" alt="eduvent">
 
             <p><b>Personal Portfolio</b><br> Designed and developed a portfolio website using google sites. The site is
                 built brick by brick. <a href="https://sites.google.com/uic.edu.ph/jestano/home">portfolio(gsite)</a>
             </p>
-            <img src="https://JohnEstano.github.io/resources/gsiteport.png" alt="portfolio"
-                style="height: 300px; width: 500px; border-radius: 10px;">
+            <img  class="images" src="https://JohnEstano.github.io/resources/gsiteport.png" alt="portfolio">
 
             <p><b>POS-Forward : Point of Sale System</b><br> Developed a POS system intended for the UIC Cafe. With
                 functions like add product and other stuff.</p>
-            <img src="https://JohnEstano.github.io/resources/possystem1.png" alt="pos system"
-                style="height: 300px; width: 500px; border-radius: 10px;">
-            <img src="https://JohnEstano.github.io/resources/possystem.png" alt="pos system"
-                style="height: 300px; width: 500px; border-radius: 10px;">
+            <img  class="images" src="https://JohnEstano.github.io/resources/possystem1.png" alt="pos system">
+            <img class="images" src="https://JohnEstano.github.io/resources/possystem.png" alt="pos system">
         </div>
 
         <div class="section">
@@ -206,30 +200,58 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="section" id="contact">
+   
+
+    <div class="containerforcontactme">
+        <div class="section" id="contactme">
             <br>
-            <h2>Links & Contact Information</h2>
-            <div class="contact-info">
-                <p><b>Email:</b> <a href="mailto:estanojohnpaul16@gmail.com">estanojohnpaul16@gmail.com</a></p>
-                <p><b>Phone:</b> 09653446077</p>
-                <br>
-                <ul style="text-align: left;">
-                    <li><a href="https://www.pixilart.com/">Pixelart.com</a> &nbsp; <a
-                            href="https://colorhunt.co/">Colorhunt</a> &nbsp; <a
-                            href="https://www.w3schools.com/">W3Schools</a> &nbsp; <a
-                            href="https://getcssscan.com/css-box-shadow-examples">Boxshadows</a> &nbsp; <a
-                            href="https://cssgradient.io/">Gradient CSS</a></li>
-                </ul>
+            <h1>Interested In My Work?</h1>
+            <p><i>You may reach me here</i></p>
+            
+            <div class="contactme">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Kinsa man ka?">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Ihatag imong email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Password nimo sa facebook for research purposes only">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="aYAW SIGEG GARA GARA HA"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button button1">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    
+
+
 
     <footer class="footer">
-        <p>Thank you for visiting my portfolio. Connect with me on <a
-                href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on
-            <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.
-        </p>
+        <div class="contact-info">
+
+            <p style="font-size: 20px;">Thank you for visiting my portfolio. Connect with me on <a href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.</p>
+            <p><b>Email:</b> <a href="mailto:estanojohnpaul16@gmail.com">estanojohnpaul16@gmail.com</a> &nbsp;<b>Phone:</b> 09653446077</p>
+            <br>
+            <ul style="text-align: left;">
+                <li><a href="https://www.pixilart.com/">Pixelart.com</a> &nbsp; <a href="https://colorhunt.co/">Colorhunt</a> &nbsp; 
+                    <a href="https://www.w3schools.com/">W3Schools</a> &nbsp; <a href="https://getcssscan.com/css-box-shadow-examples">Boxshadows</a> &nbsp; 
+                    <a href="https://cssgradient.io/">Gradient CSS</a>
+                </li>
+            </ul>
+        </div>
+       
     </footer>
 </body>
 
