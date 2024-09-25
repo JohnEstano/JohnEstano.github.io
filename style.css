@@ -333,6 +333,17 @@ body {
     background-color: #008CBA;
     color: white;
   }
+
+ .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+  }
+  
+  .button2:hover {
+    background-color: green;
+    color: white;
+  }
   
   h1 {
     color: #000000;
