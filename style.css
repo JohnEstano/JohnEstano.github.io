@@ -334,13 +334,13 @@ body {
     color: white;
   }
 
- .button2 {
+ .button3 {
     background-color: white; 
     color: black; 
     border: 2px solid green;
   }
   
-  .button2:hover {
+  .button3:hover {
     background-color: green;
     color: white;
   }
