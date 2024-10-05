@@ -1,0 +1,56 @@
+body {
+    background-color: pink;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+img {
+    width: 800px;
+    height: auto;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    body {
+        background-color: red;
+    }
+
+    img {
+        width: 600px;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: green;
+    }
+
+    img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: blue;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
