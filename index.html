@@ -6,58 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Estano - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
+
    
-
-
-    <script>
-
-        //w3school drag and drop API ctto not mine:
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-
-
-        }
-
-        //dragwhilescrolling ctto not mine
-
-        function scrollWhileDragging(ev) {
-            const scrollMargin = 200;
-            const scrollSpeed = 40;
-
-
-            if ((window.innerHeight - ev.clientY) < scrollMargin) {
-                window.scrollBy(0, scrollSpeed);
-            }
-
-
-            if (ev.clientY < scrollMargin) {
-                window.scrollBy(0, -scrollSpeed);
-            }
-
-
-            if ((window.innerWidth - ev.clientX) < scrollMargin) {
-                window.scrollBy(scrollSpeed, 0);
-            }
-
-
-            if (ev.clientX < scrollMargin) {
-                window.scrollBy(-scrollSpeed, 0);
-            }
-        }
-    </script>
-
-
+    <script src="script.js"></script>
 </head>
 
 <body id="home">
@@ -67,11 +18,16 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contactme">Contact</a>
+    
+        <label class="switch">
+            <input type="checkbox" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
     </div>
+    
 
     <div class="car">
         <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
     </div>
 
     <br>
@@ -81,58 +37,48 @@
         <video style="height: 60%; width: 100%" muted controls autoplay>
             <source src="https://JohnEstano.github.io/resources/people.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video>
+        </video>
     </div>
-   
-    
+
     <div class="containerforlikes">
         <div class="section" id="likes">
-            
-
             <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <h1>I like Music and Stuff.</h1>
-            
-
         </div>
         <audio controls>
-            <source src="https://JohnEstano.github.io/resources/doodle1.mp3" type="audio/mpeg" >
+            <source src="https://JohnEstano.github.io/resources/doodle1.mp3" type="audio/mpeg">
             Your browser doesn't support the audio element.
         </audio>
-
     </div>
-
- 
 
     <div class="container" id="about">
         <div>
             <img class="profile" src="https://JohnEstano.github.io/resources/profile.jpg" alt="John Estano">
         </div>
-        <h1>Welcome to my domain,<br> I'm <span style="color: #A31E0F;">John
-                Estaño.</span><br>It's a <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic;">pleasure </span> to meet you!</h1>
-       <br><br>
+        <h1>Welcome to my domain,<br> I'm <span style="color: #A31E0F;">John Estaño.</span><br>It's a <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic;">pleasure </span> to meet you!</h1>
+        <br><br>
 
-       <header>
-        <h1><br>About Me</h1>
-    
-    </header>
+        <header>
+            <h1><br>About Me</h1>
+        </header>
 
-    <div class="section">
-        <h2><span class="highlight">></span>Paul</h2>
-        <div class="about-content">
-            <div class="drag-container">
-                <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <img id="drag1" src="https://JohnEstano.github.io/resources/paulsprite1.png" draggable="true" ondragstart="drag(event)" alt="image">
+        <div class="section">
+            <h2><span class="highlight">></span>Paul</h2>
+            <div class="about-content">
+                <div class="drag-container">
+                    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="drag1" src="https://JohnEstano.github.io/resources/paulsprite1.png" draggable="true" ondragstart="drag(event)" alt="image">
+                    </div>
+                </div>
+                <div class="textabt">
+                    <p><b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp; &nbsp;<b>Status:</b> Depressed</p>
+                    <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer Science (BSCS) at the University of the Immaculate Conception. His main focus is to expand his knowledge in various fields of technology and programming, aiming to enhance his skills to secure a job in the near future. Currently, he considers himself a newbie.</p>
+                    <p><i style="font-size: 15px;">*Paul is draggable, try dragging him to the Education section.</i></p>
                 </div>
             </div>
-            <div class="textabt">
-                <p><b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp; &nbsp;<b>Status:</b> Depressed</p>
-                <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer Science (BSCS) at the University of the Immaculate Conception. His main focus is to expand his knowledge in various fields of technology and programming, aiming to enhance his skills to secure a job in the near future. Currently, he considers himself a newbie.</p>
-               
-                <p><i style="font-size: 15px;">*Paul is draggable, try dragging him to the Education section.</i></p>
-            </div>
         </div>
-    </div>
 
+       
     <div class="section">
         <h2>Skills</h2>
         <table>
@@ -255,11 +201,10 @@
     </div>
     
 
-
+    </div>
 
     <footer class="footer">
         <div class="contact-info">
-
             <p style="font-size: 20px;">Thank you for visiting my portfolio. Connect with me on <a href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.</p>
             <p><b>Email:</b> <a href="mailto:estanojohnpaul16@gmail.com">estanojohnpaul16@gmail.com</a> &nbsp;<b>Phone:</b> 09653446077</p>
             <br>
@@ -270,8 +215,8 @@
                 </li>
             </ul>
         </div>
-       
     </footer>
+
 </body>
 
 </html>
