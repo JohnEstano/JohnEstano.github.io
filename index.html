@@ -6,60 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Estano - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-   
     <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body id="home">
 
-    <div class="sidebar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contactme">Contact</a>
-    
-      
-    </div>
-    
 
-    <div class="car">
-        <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    </div>
 
-    <br>
-    <br>
-    <div class="containerforvideo" style="border: none; border-radius: 0px; box-shadow: none;">
-        <label class="switch">
-            <input type="checkbox" onclick="toggleDarkMode()">
-            <span class="slider"></span>
-        </label>
-    </div>
-    <div class="containerforvideo">
-        <video style="height: 60%; width: 100%" muted controls autoplay>
-            <source src="https://JohnEstano.github.io/resources/people.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-    </div>
-  
-    <div class="containerforlikes">
-        <div class="section" id="likes">
-            <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <h1>I like Music and Stuff.</h1>
-        </div>
-        <audio controls>
-            <source src="https://JohnEstano.github.io/resources/doodle1.mp3" type="audio/mpeg">
-            Your browser doesn't support the audio element.
-        </audio>
-    </div>
 
-    <div class="container" id="about">
+
+
+    <header class="banner">
+
         <div>
-            <img class="profile" src="https://JohnEstano.github.io/resources/profile.jpg" alt="John Estano">
+            <div class="containerforvideo" style="border: none; border-radius: 0px; box-shadow: none;">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </div>
-        <h1>Welcome to my domain,<br> I'm <span style="color: #A31E0F;">John Estaño.</span><br>It's a <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic;">pleasure </span> to meet you!</h1>
-        <br><br>
+        <div>
+            <h1 style="font-weight: bolder;">John J. Estaño <p id="developerText">Aspiring Developer.</p>
+            </h1>
+        </div>
 
+
+        <div>
+
+            <div class="container" style="display: flex; justify-content:center;">
+                <img id="pawn" src="https://JohnEstano.github.io/resources/pawn.png" alt="pawn" style="display: block;">
+                <img id="queen" src="https://JohnEstano.github.io/resources/queen.png" alt="queen"
+                    style="display: none;">
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+    <div style="display: flex; flex-direction: column;" class="chess">
+        <div style="display: flex; justify-content: center;">
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1"
+                    src="pawn.png" alt="pawn" style="display: block;" draggable="true" ondragstart="drag(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="whitesquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="blacksquare div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <p style="font-weight: bold; font-style: italic;" class="quotezz">“Avoid the crowd. Do your own thinking independently. <br>Be
+            the chess player, not the chess piece.” – Ralph Charell
+        </p>
+    </div>
+
+
+
+    <div class="sidebar">
+        <a href="#home" style="margin-top: 5px;">Home</a>
+        <a href="#about" style="margin-top: 5px;">About</a>
+        <a href="#projects" style="margin-top: 5px;">Projects</a>
+        <a href="#contactme" style="margin-top: 5px;">Contacts</a>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container" id="about" style="margin-top: 200px">
+
+
+
+
+        <img class="profile" src="https://JohnEstano.github.io/resources/profile.jpg" alt="John Estano">
         <header>
             <h1><br>About Me</h1>
         </header>
@@ -67,59 +133,85 @@
         <div class="section">
             <h2><span class="highlight">></span>Paul</h2>
             <div class="about-content">
-                <div class="drag-container">
-                    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img id="drag1" src="https://JohnEstano.github.io/resources/paulsprite1.png" draggable="true" ondragstart="drag(event)" alt="image">
-                    </div>
-                </div>
+
                 <div class="textabt">
-                    <p><b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp; &nbsp;<b>Status:</b> Depressed</p>
-                    <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer Science (BSCS) at the University of the Immaculate Conception. His main focus is to expand his knowledge in various fields of technology and programming, aiming to enhance his skills to secure a job in the near future. Currently, he considers himself a newbie.</p>
-                    <p><i style="font-size: 15px;">*Paul is draggable, try dragging him to the Education section.</i></p>
+                    <p><b>Full Name:</b> John Paul J. Estaño &nbsp; &nbsp;<b>Gender:</b> Male &nbsp;
+                        &nbsp;<b>Status:</b> Depressed</p>
+                    <p>Paul is a 19-year-old second-year college student pursuing a Bachelor of Science in Computer
+                        Science (BSCS) at the University of the Immaculate Conception. His main focus is to expand his
+                        knowledge in various fields of technology and programming, aiming to enhance his skills to
+                        secure a job in the near future. Currently, he considers himself a newbie.</p>
+
+
+
                 </div>
             </div>
+
+            <div class="social-links" style="margin-top: 20px;">
+                <a href="https://github.com/JohnEstano" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/johnjuntilo.estano.1" target="_blank" class="social-link"
+                    aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.chess.com/member/iamstanlee" target="_blank" class="social-link"
+                    aria-label="Chess.com">
+                    <i class="fas fa-chess"></i>
+                </a>
+            </div>
+
         </div>
 
-       
-    <div class="section">
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Programming Languages</th>
-                <td>Java</td>
-            </tr>
-            <tr>
-                <th>Web Development</th>
-                <td>HTML, CSS, Javascript (littlebit)</td>
-            </tr>
-            <tr>
-                <th>Tools & Technologies</th>
-                <td>Photoshop, Excel, Powerpoint, Canva</td>
-            </tr>
-        </table>
-    </div>
 
-    <div class="section">
-        <h2>Favourites</h2>
-        <ul>
-            <li>Favourite movie of all time is Despicable me 2</li>
-            <li>Steins Gate.</li>
-            <li>Favourite game is Plants vs Zombies</li>
-            <li>Likes listening to The Carpenters</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Tech stuff I've touched so far...</h2>
 
-    <div class="section">
-        <h2>Education</h2>
-        <br>
-        <img src="https://JohnEstano.github.io/resources/bceslogo.jfif" class="schoollogos" alt="buhangin">
-        <img src="https://JohnEstano.github.io/resources/ACDlogo.png" class="schoollogos" alt="acd">
-        <img src="https://JohnEstano.github.io/resources/uiclogo.png" class="schoollogos" alt="uiclogo">
-        
-        <br><br>
-        <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-       
-    </div>
+
+            <table>
+                <tr>
+                    <th>Programming Languages</th>
+                    <td>Java, PHP</td>
+                </tr>
+                <tr>
+                    <th>Web Development</th>
+                    <td>HTML, CSS, Javascript</td>
+                </tr>
+                <tr>
+                    <th>Frameworks</th>
+                    <td>Laravel, Bootstrap, Tailwind</td>
+                </tr>
+                <tr>
+                    <th>Tools & Technologies</th>
+                    <td>Photoshop, Excel, Powerpoint, Canva, and many more</td>
+                </tr>
+
+            </table>
+
+            <h4>Proficiency Level</h4>
+
+            <div style="width: 100%; background-color: #e0e0e0; border-radius: 12px; padding: 3px;">
+                <div
+                    style="width: 55%; height: 24px; background: linear-gradient(to right, #4caf50, #81c784); border-radius: 8px; text-align: center; color: white; font-weight: bold; line-height: 24px;">
+                    55%
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="section">
+            <h2>Education</h2>
+            <br>
+            <img src="https://JohnEstano.github.io/resources/bceslogo.jfif" class="schoollogos" alt="buhangin">
+            <img src="https://JohnEstano.github.io/resources/ACDlogo.png" class="schoollogos" alt="acd">
+            <img src="https://JohnEstano.github.io/resources/uiclogo.png" class="schoollogos" alt="uiclogo">
+
+            <br><br>
+
+
+        </div>
 
     </div>
 
@@ -142,43 +234,54 @@
             <p><b>Personal Portfolio</b><br> Designed and developed a portfolio website using google sites. The site is
                 built brick by brick. <a href="https://sites.google.com/uic.edu.ph/jestano/home">portfolio(gsite)</a>
             </p>
-            <img  class="images" src="https://JohnEstano.github.io/resources/gsiteport.png" alt="portfolio">
+            <img class="images" src="https://JohnEstano.github.io/resources/gsiteport.png" alt="portfolio">
 
             <p><b>POS-Forward : Point of Sale System</b><br> Developed a POS system intended for the UIC Cafe. With
                 functions like add product and other stuff.</p>
-            <img  class="images" src="https://JohnEstano.github.io/resources/possystem1.png" alt="pos system">
+            <img class="images" src="https://JohnEstano.github.io/resources/possystem1.png" alt="pos system">
             <img class="images" src="https://JohnEstano.github.io/resources/possystem.png" alt="pos system">
-            
+
             <p><strong>MY CODECADEMY CERTIFICATE PROOF!</strong></p>
-                
-                <img src="https://JohnEstano.github.io/resources/screenshots.png" alt="screenshot" class="images">
-            
+
+            <img src="https://JohnEstano.github.io/resources/screenshots.png" alt="screenshot" class="images">
+
 
         </div>
 
-        <div class="section">
-            <h2>HTML Project's</h2>
-            <button class="button button1"
-                onclick="window.location.href='https://JohnEstano.github.io/html/fashionblog/index.html'">Fashion  Blog</button>
 
-            <button class="button button2" onclick="window.location.href='https://JohnEstano.github.io/html/healthyrecipes/index.html'">Healthy Recipes</button>
-               <button class="button button3" onclick="window.location.href='https://JohnEstano.github.io/html/oliviawoodruff/index.html'">Olivia Woodruff</button>
-            <button class="button button3" onclick="window.location.href='https://JohnEstano.github.io/html/mq/index.html'">MQ</button>
+
+        <div class="section" style="display: flex; flex-direction: column;">
+            <h2>HTML Project's</h2>
+            <div style="margin-top: 20px;">
+                <button class="button button1"
+                    onclick="window.location.href='https://JohnEstano.github.io/html/fashionblog/index.html'">Fashion
+                    Blog</button>
+
+                <button class="button button2"
+                    onclick="window.location.href='https://JohnEstano.github.io/html/healthyrecipes/index.html'">Healthy
+                    Recipes</button>
+                <button class="button button3"
+                    onclick="window.location.href='https://JohnEstano.github.io/html/oliviawoodruff/index.html'">Olivia
+                    Woodruff</button>
+                <button class="button button3"
+                    onclick="window.location.href='https://JohnEstano.github.io/html/mq/index.html'">MQ</button>
+            </div>
+
         </div>
     </div>
 
-   
 
-    <div class="containerforcontactme">
+
+    <div class="containerforcontactme" style="margin-top: 200px;">
         <div class="section" id="contactme">
             <br>
-            <h1>Interested In My Work?</h1>
+            <h1>Want to buy me a coffee?</h1>
             <p><i>You may reach me here</i></p>
-            
+
             <div class="contactme">
                 <form action="#" method="post">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required placeholder="John Doe">
                     </div>
                     <div class="form-group">
@@ -187,32 +290,35 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required placeholder="123456">
-                    </div>
-                    <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="e.g Paul you are amazing, you're so sigma let's work together!"></textarea>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="e.g Paul you are amazing, you're so sigma let's work together!"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="button button1">Send Message</button>
+                        <button type="submit" class="button button3">Send Message</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
+
 
     </div>
 
     <footer class="footer">
         <div class="contact-info">
-            <p style="font-size: 20px;">Thank you for visiting my portfolio. Connect with me on <a href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.</p>
-            <p><b>Email:</b> <a href="mailto:estanojohnpaul16@gmail.com">estanojohnpaul16@gmail.com</a> &nbsp;<b>Phone:</b> 09653446077</p>
+            <p style="font-size: 20px;">Thank you for visiting my portfolio. Connect with me on <a
+                    href="https://www.facebook.com/johnjuntilo.estano.1/" target="_blank">Facebook</a> or follow me on
+                <a href="https://github.com/JohnEstano" target="_blank">GitHub</a>.
+            </p>
+            <p><b>Email:</b> <a href="mailto:estanojohnpaul16@gmail.com">estanojohnpaul16@gmail.com</a>
+                &nbsp;<b>Phone:</b> 09653446077</p>
             <br>
             <ul style="text-align: left;">
-                <li><a href="https://www.pixilart.com/">Pixelart.com</a> &nbsp; <a href="https://colorhunt.co/">Colorhunt</a> &nbsp; 
-                    <a href="https://www.w3schools.com/">W3Schools</a> &nbsp; <a href="https://getcssscan.com/css-box-shadow-examples">Boxshadows</a> &nbsp; 
+                <li><a href="https://www.pixilart.com/">Pixelart.com</a> &nbsp; <a
+                        href="https://colorhunt.co/">Colorhunt</a> &nbsp;
+                    <a href="https://www.w3schools.com/">W3Schools</a> &nbsp; <a
+                        href="https://getcssscan.com/css-box-shadow-examples">Boxshadows</a> &nbsp;
                     <a href="https://cssgradient.io/">Gradient CSS</a>
                 </li>
             </ul>
