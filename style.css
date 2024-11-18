@@ -1,3 +1,37 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.containerforvideo, .containerforcontactme, .containerforlikes {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+
+.containerforcontactme {
+  animation-delay: 1s;
+}
+
+.containerforlikes {
+  animation-delay: 1.5s;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
@@ -65,13 +99,17 @@ body.dark-mode h1 {
 }
 
 
+
+
 body.dark-mode h2, body.dark-mode h1.span {
   color: #769656;
 }
 
-body.dark-mode th, body.dark-mode td {
+body.dark-mode th, body.dark-mode td, body.dark-mode thead {
   border: 1px solid #767676;
 }
+
+
 
 body.dark-mode tr:nth-child(even) {
   background-color: #444;
@@ -105,6 +143,47 @@ body.dark-mode footer a {
 
 body.dark-mode .social-link{
   color: #e3e0e0;
+}
+
+body.dark-mode #github-projects h2 {
+  color: #769656;
+}
+
+body.dark-mode #github-projects body.dark-mode {
+  color: white;
+}
+
+body.dark-mode .repo-description{
+  color: white;
+}
+
+body.dark-mode #projects-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body.dark-mode #projects-list th, 
+body.dark-mode #projects-list td {
+  padding: 12px;
+  text-align: left;
+}
+
+body.dark-mode #projects-list th {
+  background-color: #444;
+  color: white;
+  
+}
+
+body.dark-mode #projects-list tr:nth-child(even) {
+  background-color: #333;
+}
+
+body.dark-mode #projects-list tr:nth-child(odd) {
+  background-color: #444;
+}
+
+body.dark-mode #projects-list td {
+  border: 1px solid #555;
 }
 
 html {
@@ -817,7 +896,10 @@ tr:nth-child(even) {
   .banner {
     height: auto;
     padding: 30px;
+    margin-top: 50px;
   }
+
+
 }
 
 
@@ -848,3 +930,34 @@ tr:nth-child(even) {
 .medium {
   font-size:4vh;
 }
+#projects-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#projects-list th, #projects-list td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#projects-list th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.repo-link {
+  color: #38b000; 
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  color: #333; 
+}
+
+
