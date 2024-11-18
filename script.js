@@ -1,5 +1,5 @@
 
-//w3school drag and drop API ctto not mine:
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -16,7 +16,7 @@ function drop(ev) {
 
 }
 
-//dragwhilescrolling ctto not mine
+
 
 function scrollWhileDragging(ev) {
     const scrollMargin = 200;
