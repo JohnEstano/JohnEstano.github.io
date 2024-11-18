@@ -1,4 +1,30 @@
+const username = "JohnEstano"; 
+const apiUrl = `https://api.github.com/users/${username}/repos`;
 
+const headers = {
+    "Content-Type": "application/json"
+};
+
+fetch(apiUrl, { headers })
+    .then(response => response.json())
+    .then(repos => {
+        const projectsList = document.getElementById("projects-list").getElementsByTagName("tbody")[0];
+
+        repos.forEach(repo => {
+            const repoRow = document.createElement("tr");
+
+            repoRow.innerHTML = `
+                <td><a href="${repo.html_url}" target="_blank" class="repo-link">${repo.name}</a></td>
+                <td class="repo-description">${repo.description || "No description available."}</td>
+                
+            `;
+
+            projectsList.appendChild(repoRow);
+        });
+    })
+    .catch(error => {
+        console.error("Error fetching GitHub repositories:", error);
+    });
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -12,31 +38,23 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
-
-
 }
-
-
 
 function scrollWhileDragging(ev) {
     const scrollMargin = 200;
     const scrollSpeed = 40;
 
-
     if ((window.innerHeight - ev.clientY) < scrollMargin) {
         window.scrollBy(0, scrollSpeed);
     }
-
 
     if (ev.clientY < scrollMargin) {
         window.scrollBy(0, -scrollSpeed);
     }
 
-
     if ((window.innerWidth - ev.clientX) < scrollMargin) {
         window.scrollBy(scrollSpeed, 0);
     }
-
 
     if (ev.clientX < scrollMargin) {
         window.scrollBy(-scrollSpeed, 0);
