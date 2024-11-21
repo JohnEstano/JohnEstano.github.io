@@ -14,8 +14,8 @@ fetch(apiUrl, { headers })
             const repoRow = document.createElement("tr");
 
             repoRow.innerHTML = `
-                <td><a href="${repo.html_url}" target="_blank" class="repo-link">${repo.name}</a></td>
-                <td class="repo-description">${repo.description || "No description available."}</td>
+                <td><a href="${repo.html_url}" target="_blank" class="repo-link" text-decoration: none;">${repo.name}</a></td>
+                <td class="repo-description" style="padding: 12px 16px; ">${repo.description || "No description available."}</td>
                 
             `;
 
@@ -25,7 +25,6 @@ fetch(apiUrl, { headers })
     .catch(error => {
         console.error("Error fetching GitHub repositories:", error);
     });
-
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -76,7 +75,7 @@ function toggleDarkMode() {
         toggleButton.checked = true;
         localStorage.setItem('darkMode', 'enabled');
 
-        developerText.textContent = 'Inspiring Developers'; 
+        developerText.textContent = '</Coder>'; 
     } else {
         pawn.style.display = 'block';
         queen.style.display = 'none';
@@ -84,7 +83,7 @@ function toggleDarkMode() {
         toggleButton.checked = false;
         localStorage.setItem('darkMode', 'disabled');
 
-        developerText.textContent = 'Aspiring Developer.'; 
+        developerText.textContent = 'UI/UX Designer.'; 
     }
 }
 
@@ -97,9 +96,11 @@ window.onload = function () {
         document.getElementById('pawn').style.display = 'none';
         document.getElementById('queen').style.display = 'block';
         toggleButton.checked = true;  
-        developerText.textContent = 'Inspiring Developers'; 
+        developerText.textContent = '</Coder>'; 
     } else {
         toggleButton.checked = false;
-        developerText.textContent = 'Aspiring Developer.'; 
+        developerText.textContent = 'UI/UX Designer.'; 
     }
 };
+
+
